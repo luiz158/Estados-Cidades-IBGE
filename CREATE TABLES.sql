@@ -1,17 +1,13 @@
-CREATE TABLE Estado (
-    Id       INT          NOT NULL,
-    CodigoUf INT          NOT NULL,
-    Nome     VARCHAR (50) NOT NULL,
-    Uf       VARCHAR (2)  NOT NULL,
-    Regiao   VARCHAR (15) NOT NULL,
-    PRIMARY KEY (Id)
-);
+CREATE TABLE estados (
+  id INTEGER   NOT NULL ,
+  nome VARCHAR(100)    ,
+  sigla VARCHAR(2)      ,
+PRIMARY KEY(id));
 
-CREATE TABLE Cidade (
-    Id              INT          NOT NULL,
-    IdEstado        INT          NOT NULL,
-    CodigoMunicipio INT          NOT NULL,
-    Nome            VARCHAR (50) NOT NULL,
-    Uf              VARCHAR (2)  NOT NULL,
-    PRIMARY KEY (Id)
-);
+CREATE TABLE cidades (
+  id INTEGER   NOT NULL ,
+  id_estado INTEGER   NOT NULL ,
+  nome VARCHAR(255)      ,
+PRIMARY KEY(id)  ,
+  FOREIGN KEY(id_estado)
+    REFERENCES estados(id));
