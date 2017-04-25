@@ -1,15 +1,15 @@
 -- Create Table --
 
-CREATE TABLE Regiao (
-  Id 	INT 		NOT NULL AUTO_INCREMENT,
-  Nome 	VARCHAR(50) NOT NULL,
-  PRIMARY KEY (Id)
+CREATE TABLE regiao (
+  id 	INT NOT NULL AUTO_INCREMENT,
+  nome 	VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id)
 );
 
 -- Insert Data --
 
-Insert into Regiao (Id, Nome) values (1, 'Norte');
-Insert into Regiao (Id, Nome) values (2, 'Nordeste');
-Insert into Regiao (Id, Nome) values (3, 'Sudeste');
-Insert into Regiao (Id, Nome) values (4, 'Sul');
-Insert into Regiao (Id, Nome) values (5, 'Centro-Oeste');
+INSERT INTO Regiao (id, nome) VALUES (1, 'Norte');
+INSERT INTO Regiao (id, nome) VALUES (2, 'Nordeste');
+INSERT INTO Regiao (id, nome) VALUES (3, 'Sudeste');
+INSERT INTO Regiao (id, nome) VALUES (4, 'Sul');
+INSERT INTO Regiao (id, nome) VALUES (5, 'Centro-Oeste');
