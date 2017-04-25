@@ -1,7 +1,7 @@
 -- Create Table --
 
 CREATE TABLE bairro (
-  id 	 INT 		  NOT NULL AUTO_INCREMENT,
+  id 	 INT 		  NOT NULL AUTOINCREMENT,
   codigo CHAR(10)	  NOT NULL,
   nome 	 VARCHAR(255) NOT NULL,
   uf	 CHAR(2)	  NOT NULL,

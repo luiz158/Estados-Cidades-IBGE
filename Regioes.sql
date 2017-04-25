@@ -6,6 +6,12 @@ CREATE TABLE regiao (
   PRIMARY KEY (id)
 );
 
+-- ** SQLITE
+CREATE TABLE `regiao` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`nome`	TEXT NOT NULL
+);
+
 -- Insert Data --
 
 INSERT INTO Regiao (id, nome) VALUES (1, 'Norte');

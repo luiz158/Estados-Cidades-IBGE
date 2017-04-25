@@ -1,7 +1,7 @@
 -- Create Table --
 
 CREATE TABLE estado (
-    id       INT          NOT NULL AUTO_INCREMENT,
+    id       INT          NOT NULL AUTOINCREMENT,
     codigo_uf INT          NOT NULL,
     nome     VARCHAR (50) NOT NULL,
     uf       CHAR 	 (2)  NOT NULL,
@@ -9,8 +9,16 @@ CREATE TABLE estado (
     PRIMARY KEY (id)
 );
 
--- Insert Data --
+-- ** SQLITE
+CREATE TABLE `estado` (
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `codigo_uf` INTEGER NOT NULL,
+    `nome` TEXT NOT NULL,
+    `uf` TEXT NOT NULL,
+    `id_regiao` INTEGER NOT NULL
+);
 
+-- Insert Data --
 INSERT INTO estado (codigo_uf, nome, uf, id_regiao) VALUES (12, 'Acre', 'AC', 1);
 INSERT INTO estado (codigo_uf, nome, uf, id_regiao) VALUES (27, 'Alagoas', 'AL', 2);
 INSERT INTO estado (codigo_uf, nome, uf, id_regiao) VALUES (16, 'Amapá', 'AP', 1);

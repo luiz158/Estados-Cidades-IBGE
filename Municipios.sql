@@ -1,12 +1,21 @@
 -- Create Table --
 
 CREATE TABLE municipio (
-  id 	 INT 		  NOT NULL AUTO_INCREMENT,
+  id 	 INT 		  NOT NULL AUTOINCREMENT,
   codigo INT		  NOT NULL,
   nome 	 VARCHAR(255) NOT NULL,
   uf	 CHAR(2)	  NOT NULL,
   PRIMARY KEY (id)
 );
+
+-- ** SQLITE
+CREATE TABLE `municipio` (
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `codigo` INTEGER NOT NULL,
+    `nome` TEXT NOT NULL,
+    `uf` TEXT NOT NULL
+);
+
 
 -- Insert Data --
 
