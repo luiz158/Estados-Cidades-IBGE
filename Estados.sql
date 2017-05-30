@@ -2,10 +2,10 @@
 
 CREATE TABLE estados (
     id       INT          NOT NULL AUTO_INCREMENT,
-    coduf 	 INT          NOT NULL,
-    nome     VARCHAR (50) NOT NULL,
-    uf       CHAR 	 (2)  NOT NULL,
-    regiao   INT	      NOT NULL,
+    coduf 	 INT          NULL,
+    nome     VARCHAR (50) COLLATE utf8_general_ci NULL,
+    uf       CHAR 	 (2)  COLLATE utf8_general_ci NULL,
+    regiao   INT	      NULL,
     PRIMARY KEY (id)
 );
 

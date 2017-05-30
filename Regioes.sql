@@ -2,7 +2,7 @@
 
 CREATE TABLE regioes (
   id 	INT 		NOT NULL AUTO_INCREMENT,
-  nome 	VARCHAR(50) NOT NULL,
+  nome 	VARCHAR(50) COLLATE utf8_general_ci NULL,
   PRIMARY KEY (id)
 );
 

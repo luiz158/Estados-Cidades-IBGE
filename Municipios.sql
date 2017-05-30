@@ -2,9 +2,9 @@
 
 CREATE TABLE cidades (
   id 	 INT 		  NOT NULL AUTO_INCREMENT,
-  codcidade INT		  NOT NULL,
-  nome 	 VARCHAR(255) NOT NULL,
-  uf	 CHAR(2)	  NOT NULL,
+  codcidade INT		  NULL,
+  nome 	 VARCHAR(255) COLLATE utf8_general_ci NULL ,
+  uf	 CHAR(2)	  COLLATE utf8_general_ci NULL,
   prioridade INT 	  NULL,
   PRIMARY KEY (id)
 );
@@ -12,6 +12,7 @@ CREATE TABLE cidades (
 ALTER TABLE cidades
 ADD CONSTRAINT FK_CidadeUf
 FOREIGN KEY (uf) REFERENCES estados(uf);
+
 
 -- Insert Data --
 
